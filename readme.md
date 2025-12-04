@@ -60,7 +60,7 @@ Spokojnie - dasz radę!
     ![Alt text](pictures/enable-lombok.png?raw=true "Jak wygląda to okienko?!")
     ![Alt text](pictures/enable-ann-processing.png?raw=true "Gdzie się włącza te adnotacje?!")<br/>
 13. Po kliknięciu, powinno być widoczne drzewo plików oraz nie powinno być żadnych błędów.
-    ![Alt text](pictures/no-errors.png?raw=true "Sukces!")
+    ![Alt text](pictures/no-error.png?raw=true "Sukces!")
 14. **GDYBY JEDNAK NIE** - wejdź w `Git basha` (tam gdzie był*ś) lub w Terminal, wejdź do
     katalogu z projektem i wywołaj `./gradlew build` i poczekaj, aż skończy działać. <br/>
     ![Alt text](pictures/gradlew-build.png?raw=true "A co jeśli mi nie działa?")
