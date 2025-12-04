@@ -77,12 +77,13 @@ Spokojnie - dasz radę!
 ## Brawo! środowisko skonfigurowane, czas na implementację!
 <br/>
 Będziemy implementować endpointy:
-- `GET /good-people`  - zwracający wszystkich członków gry
-- `POST /good-people` - dodający nową osobę do gry
-- `GET /santa-assignments` - zwracający przypisania (kto kogo wylosował)
-- `POST /santa-assignments` - przypisujący kto kogo wylosuje
-- `GET /santa-assignments/{santaName}` - sprawdzający kogo wylosowała osoba o imieniu `{santaName}`
-- `DELETE /good-people/{santaName}` - umożliwiający usunięcie osoby o imieniu `{santaName}` z gry
+
+* `GET /good-people` - zwracający wszystkich członków gry
+* `POST /good-people` - dodający nową osobę do gry
+* `GET /santa-assignments` - zwracający przypisania (kto kogo wylosował)
+* `POST /santa-assignments` - przypisujący kto kogo wylosuje
+* `GET /santa-assignments/{santaName}` - sprawdzający kogo wylosowała osoba o imieniu `{santaName}`
+* `DELETE /good-people/{santaName}` - umożliwiający usunięcie osoby o imieniu `{santaName}` z gry
 
 Endpointy są wstępnie już napisane w kodzie. <br/>
 Twoim zadaniem jest napisanie logiki zarządzającej graczami :) <br/>
