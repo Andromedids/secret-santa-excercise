@@ -113,7 +113,7 @@ Przechodząc do tego, co trzeba zrobić:
 ```  
 2. Otwórz przeglądarkę - najlepiej `Chroma` - i wejdź na [strone Mikołajkową ](https://secret-santa-production-cb6b.up.railway.app/) i zauważ błąd na niej.
 3. Uruchom projekt -> wyszukaj klasy `DemolabApplication` i kliknij zielony trójkącik tak aby uruchomiła się aplikacja
-![Alt text](pictures/how-to-run-app.png?raw=true "Tak uruchomisz")
+![Alt text](pictures/how-to-run.png?raw=true "Tak uruchomisz")
 ![Alt text](pictures/run-app.png?raw=true "Po tym poznasz, że się uruchomiła")
 4. Odśwież stronę. Jeśli poprawnie zaimplementował*ś punkt 1 - błąd powinien zniknąć. Jeśli nie - kombinuj jak zwrócić odpowiednie dane ;)
 5. Następnie przejdź do uzupełnienia metody `addParticipant`, której zadaniem jest dodać nową osobę. Przyjmuje ona `request body`, czyli wiadomość. Wiadomość ta ma postać takiego samego jsona. Jak możesz dodać to `imię` do wszystkich uczestników?
@@ -125,14 +125,13 @@ Przechodząc do tego, co trzeba zrobić:
 11. Pododawaj nowe osoby. 
 12. Kliknij przycisk "Losuj"
 13. Sprawdź, czy w zakładce `Network` nie poleciało nic czerwonego (błąd `401`, `403`, lub cokolwiek co zwraca Twoją uwagę kolorem). Jeśli nie - przejdź dalej.
-14. Żeby widzieć wyniki losowania zaimplementuj metodę `getSantas` w pliku `SecretSantaController`. Powinna ona zwracać listę jsonów nazwanej `SantaResult` o następującej strukturze:
+14. Żeby widzieć wyniki losowania zaimplementuj metodę `getSantas` w pliku `SecretSantaController`. W tej metodzie należy zwrócić wynik zapisany w polu (fioletowej zmiennej) w poprzednim zadaniu. Powinna ona zwracać listę jsonów nazwanej `SantaResult` o następującej strukturze:
 ```json
 {
   "santaName": "kto",
   "goodPersonName": "wylosował kogo"
 }
 ```
-W tej metodzie należy zwrócić wynik zapisany w polu (fioletowej zmiennej) w poprzednim zadaniu.
 15. Zrestartuj aplikację - odśwież stronę, dodaj osoby, wylosuj...
 16. ... I powinny pojawić się wyniki! A jeśli nie ma - sprawdź w IntelliJu lub zakładce `Network` co się działo. Przeczytaj błąd. Co się mogło stać?
 17. Zaimplementuj metodę `getOneSanta` - czyli metodę zwracają wyniki dla 1 podanego uczestnika.
